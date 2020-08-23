@@ -1,0 +1,22 @@
+{% extends "layout.njk" %}
+
+{% block head %}
+<title>itals - Tales Félix </title>
+{%endblock%}
+{% block content %}
+
+
+<div id="wrapper">
+  <img src="/src/img/{{data.img}}" alt="">
+  <h1>{{data.name}}</h1>
+  <h2>{{data.curso}}</h2>
+  <p>{{data.descricao}} <a href="{{data.links.descricao}}" target="blank"> {{data.palavraChaveDescricao}}</a> </p>
+</div>
+
+<div class="links" id="links-footer">
+  <a href="{{data.links.github}}" target="blank">Github</a>
+  <a href="{{data.links.linkendin}}" target="blank">Linkendin</a>
+  <a href="{{data.links.rocktseat}}" target="blank">Rocktseat</a>
+</div>
+
+{% endblock %}
