@@ -14,7 +14,7 @@ nunjucks.configure("views", {
 
 app.get('/', function(req, res){
   const data = {
-    img: "talesR.jpg",
+    img: "tales.png",
     name: 'Tales Félix',
     curso: 'Sistemas de Informação',
     descricao: "Projetos",

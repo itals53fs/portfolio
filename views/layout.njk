@@ -6,23 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/bootstrap.mim.css">
     <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/menu.css">
 
-    {% block head %}
-    
-    {% endblock %}
+    {% block head %}{% endblock %}
   </head>
   <body>
-    
+
     <header>
-      <div class="links">
-        <a href="/">Sobre</a>
-        <a href="/portfolio">Portfolio</a>
-        <a href="#">Imagens</a>
-      </div>
-  
+      <nav class="links" data-js="nav">
+        <button data-js="button" id="contole">X</button>
+        <div data-js="menu" class="menu">
+          <a href="/">Sobre</a>
+          <a href="/portfolio">Portfolio</a>
+          <a href="#">oppppp</a>
+          <a href="#">oppp</a>
+          <a href="#">oppppp</a>
+          <a href="#">oppp</a>
+        </div>
+      </nav>
+
     </header>
-  
+    <script src="/src/controlNav.js"></script>
+
     {% block content %}{% endblock %}
   </body>
-
 </html>
